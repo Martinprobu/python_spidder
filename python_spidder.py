@@ -58,7 +58,7 @@ print("Strt Addr Spider ...")
 insert_flag = True
 sleep_time = 5
 sleep_time_sub = 0.2
-db = pymysql.connect("10.18.40.186","root","123456","ins_prometheus_saas")
+db = pymysql.connect("127.0.0.1","root","123456","ins_prometheus_saas")
 cursor = db.cursor()
 #area_code, area_name, area_type, parent_code, create_time, full_name, outer_area_code
 insert_sql = 'insert into m_area_dev values("%s", "%s", "%d", "%s", "%s", "%s", "%s")'
